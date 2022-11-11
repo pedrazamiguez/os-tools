@@ -1,0 +1,17 @@
+#!/bin/bash
+
+main_menu_connected_as_user;Conectado como
+
+main_menu_option_admin;Administración (Usuarios, Servicios, Discos, Red, ...)
+main_menu_option_documents;Documentos (HTML, CSV, XML, PDF, MarkDown, ...)
+main_menu_option_downloads;Descargas (YouTube, Twitter, Instagram, ...)
+main_menu_option_files;Archivos (Renombrar, Comprimir, Copiar/Mover, ...)
+main_menu_option_images;Imágenes (Conversión, Extracción de metadatos, ...)
+main_menu_option_language;Cambiar idioma
+main_menu_option_exit;Salir
+
+pause_text;Presiona una tecla para continuar...
+
+language_title;Idioma
+language_english;Inglés
+language_spanish;Español
