@@ -1,7 +1,7 @@
 #!/bin/bash
 
-PATH_DELIMITER_T="/os-tools/macos"
-LANGUAGE_PATH="/i18n"
+PATH_DELIMITER_T="/os-tools"
+LANGUAGE_PATH="/common/i18n"
 base_path_t=$(echo "$(realpath "$0")" | awk -F "$PATH_DELIMITER_T" '{ print $1 }')
 full_path_t="${base_path_t}${PATH_DELIMITER_T}${LANGUAGE_PATH}"
 

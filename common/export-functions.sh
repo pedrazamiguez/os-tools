@@ -1,13 +1,13 @@
 #!/bin/bash
 
 # SCRIPTS TO EXPORT *****************************************************************************************
-SCRIPTS_TO_EXPORT="translation io permissions admin strings"
+SCRIPTS_TO_EXPORT="translation io permissions strings"
 # ***********************************************************************************************************
 
-PATH_DELIMITER="/os-tools/macos"
-COMMON_PATH="/utils/common"
+PATH_DELIMITER="/os-tools"
+FUNCTIONS_PATH="/common/functions"
 base_path=$(echo "$(realpath "$0")" | awk -F "$PATH_DELIMITER" '{ print $1 }')
-full_path="${base_path}${PATH_DELIMITER}${COMMON_PATH}"
+full_path="${base_path}${PATH_DELIMITER}${FUNCTIONS_PATH}"
 
 for script in $SCRIPTS_TO_EXPORT
 do
@@ -19,3 +19,5 @@ do
     #echo "$function_names"
     export -f $function_names
 done
+
+export language
