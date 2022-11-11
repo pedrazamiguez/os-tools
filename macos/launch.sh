@@ -36,7 +36,7 @@ display_main_menu() {
         3) "$(dirname "$0")/services/downloads.sh";;
         4) "$(dirname "$0")/services/files.sh";;
         5) "$(dirname "$0")/services/images.sh";;
-        9) change_language; . "$(dirname "$0")/utils/common.sh";;
+        9) change_language; . "$(dirname "$0")/../common/export-functions.sh";;
         0) exit 0;;
     esac
     pause
